@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4AA37DC52A3B400F00427C3D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA37DC42A3B400F00427C3D /* HomeView.swift */; };
+		4AA37DC82A3C51E000427C3D /* ExpandedBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA37DC72A3C51E000427C3D /* ExpandedBottomSheet.swift */; };
 		4AC585C629FB13F0005520F9 /* AppleMusicBottomSheetSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC585C529FB13F0005520F9 /* AppleMusicBottomSheetSwiftUIApp.swift */; };
 		4AC585C829FB13F0005520F9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC585C729FB13F0005520F9 /* Persistence.swift */; };
 		4AC585CB29FB13F0005520F9 /* AppleMusicBottomSheetSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AC585C929FB13F0005520F9 /* AppleMusicBottomSheetSwiftUI.xcdatamodeld */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		4AA37DC42A3B400F00427C3D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4AA37DC72A3C51E000427C3D /* ExpandedBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedBottomSheet.swift; sourceTree = "<group>"; };
 		4AC585C229FB13F0005520F9 /* AppleMusicBottomSheetSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicBottomSheetSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC585C529FB13F0005520F9 /* AppleMusicBottomSheetSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicBottomSheetSwiftUIApp.swift; sourceTree = "<group>"; };
 		4AC585C729FB13F0005520F9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA37DC42A3B400F00427C3D /* HomeView.swift */,
+				4AA37DC72A3C51E000427C3D /* ExpandedBottomSheet.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				4AC585C629FB13F0005520F9 /* AppleMusicBottomSheetSwiftUIApp.swift in Sources */,
 				4AC585C829FB13F0005520F9 /* Persistence.swift in Sources */,
 				4AC585CD29FB13F0005520F9 /* ContentView.swift in Sources */,
+				4AA37DC82A3C51E000427C3D /* ExpandedBottomSheet.swift in Sources */,
 				4AA37DC52A3B400F00427C3D /* HomeView.swift in Sources */,
 				4AC585CB29FB13F0005520F9 /* AppleMusicBottomSheetSwiftUI.xcdatamodeld in Sources */,
 			);
