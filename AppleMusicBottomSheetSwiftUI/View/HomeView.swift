@@ -15,7 +15,16 @@ struct HomeView: View {
         // Tab View
         TabView {
             // Sample Tab's
-            SampleTabView("Listen Now", "play.circle.fill")
+            ListenNow()
+                .tabItem {
+                    Image(systemName: "play.circle.fill")
+                    Text("Listen Now")
+                }
+                // Changing Tab Background Color
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(.ultraThickMaterial,for: .tabBar)
+                // Hiding Tab Bar When Sheet is Expanded
+                .toolbar(expandSheet ? .hidden : .visible, for: .tabBar)
             SampleTabView("Browse", "square.grid.2x2.fill")
             SampleTabView("Radio", "dot.radiowaves.left.and.right")
             SampleTabView("Music", "play.square.stack")
@@ -32,6 +41,26 @@ struct HomeView: View {
                 // Transtion for more fluent Animation
                     .transition(.asymmetric(insertion: .identity, removal: .offset(y: -5)))
             }
+        }
+    }
+    
+    // Custom Listen Now View
+    @ViewBuilder
+    func ListenNow() -> some View {
+        NavigationStack {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 20) {
+                    Image("Card 1")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    
+                    Image("Card 2")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+                .padding()
+            }
+            .navigationTitle("Listen Now")
         }
     }
     
@@ -109,7 +138,7 @@ struct MusicInfo: View {
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: size.width, height: size.height)
-                            .clipShape(RoundedRectangle(cornerRadius: 5, style: .continuous))
+                            .clipShape(RoundedRectangle(cornerRadius: expandSheet ? 15 : 5, style: .continuous))
                     }
                     .matchedGeometryEffect(id: "ARTWORK", in: animation)
                 }
